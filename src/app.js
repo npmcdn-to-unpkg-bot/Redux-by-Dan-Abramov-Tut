@@ -14,8 +14,10 @@ const todos = (state =[], action)=>{
           return todo;
         }
         else{
-          return {...todo,
-                 completed: !todo.completed};
+          return { 
+            ...todo,
+            completed: !todo.completed
+               };
         }
       });
       default:
